@@ -16,7 +16,11 @@ DefaultBucket = 'Your default bucket'
 ```
 Alternatively, you can provide configuration to `go-cfr2` by setting environment variables:
 ```shell
-CFR2_ACCOUNT_ID="CFR2_ACCOUNT_ID" && CFR2_ACCESS_KEY_ID="CFR2_ACCESS_KEY_ID" && CFR2_SECRET_ACCESS_KEY="CFR2_SECRET_ACCESS_KEY" && CFR2_DEFAULT_BUCKET="CFR2_DEFAULT_BUCKET" && go-cfr2 <command> [flags]
+CFR2_ACCOUNT_ID="CFR2_ACCOUNT_ID" && \
+CFR2_ACCESS_KEY_ID="CFR2_ACCESS_KEY_ID" && \
+CFR2_SECRET_ACCESS_KEY="CFR2_SECRET_ACCESS_KEY" && \
+CFR2_DEFAULT_BUCKET="CFR2_DEFAULT_BUCKET" && \
+go-cfr2 <command> [flags]
 ```
 
 ## Usage
