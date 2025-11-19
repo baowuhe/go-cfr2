@@ -1,5 +1,5 @@
 # go-cfr2
-Tool to operate Cloudflare R2
+`go-cfr2` provides functionality to manipulate Cloudflare R2 object storage service, including listing objects, uploading, downloading, deleting, renaming, generating temporary links, and more.
 
 ## Build
 ```bash
@@ -7,12 +7,16 @@ go mod tidy && go build -o build/go-cfr2
 ```
 
 ## Setup
-go-cfr2 read config file from $HOME/.local/cfg/cfr2.toml，example:
+`go-cfr2` read config file from `$HOME/.local/cfg/cfr2.toml`. `cfr2.toml` example:
 ```cfr2.toml
 AccountID = 'Your cloudflare r2 AccountID'
 AccessKeyID = 'Your cloudflare r2 AccessKeyID'
 SecretAccessKey = 'Your cloudflare r2 SecretAccessKey'
 DefaultBucket = 'Your default bucket'
+```
+Alternatively, you can provide configuration to `go-cfr2` by setting environment variables:
+```shell
+CFR2_ACCOUNT_ID="CFR2_ACCOUNT_ID" && CFR2_ACCESS_KEY_ID="CFR2_ACCESS_KEY_ID" && CFR2_SECRET_ACCESS_KEY="CFR2_SECRET_ACCESS_KEY" && CFR2_DEFAULT_BUCKET="CFR2_DEFAULT_BUCKET" && go-cfr2 <command> [flags]
 ```
 
 ## Usage

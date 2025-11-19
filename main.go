@@ -201,7 +201,7 @@ func handleRenameCommand(ctx context.Context, client *s3.Client, cfg *config.R2C
 }
 
 func printUsage() {
-	fmt.Println("Usage: cfr2 <command> [flags]")
+	fmt.Println("Usage: go-cfr2 <command> [flags]")
 	fmt.Println("\nCommands:")
 	fmt.Println("  list      List all objects in the default R2 bucket")
 	fmt.Println("            Flags:")
