@@ -31,3 +31,4 @@ vendor/
 build/
 *.tar
 
+go-cfr2

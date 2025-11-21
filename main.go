@@ -10,9 +10,9 @@ import (
 	"strings"
 	"time"
 
-	"go-cfr2/config"
-	"go-cfr2/r2"
-	"go-cfr2/utils"
+	"github.com/baowuhe/go-cfr2/config"
+	"github.com/baowuhe/go-cfr2/r2"
+	"github.com/baowuhe/go-cfr2/utils"
 
 	"github.com/aws/aws-sdk-go-v2/service/s3"
 )

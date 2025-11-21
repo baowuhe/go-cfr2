@@ -1,4 +1,4 @@
-module go-cfr2
+module github.com/baowuhe/go-cfr2
 
 go 1.25.4
 
